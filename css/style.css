@@ -487,15 +487,19 @@ body {
 	margin : 0px;
 }
 
+.over-text{
+	text-shadow: 2px 1px black;
+}
+
 .image-cropper {
-	margin-top:6%;
+	/* margin-top:6%;
   width: 150px;
   height: 150px;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
-  /*left:46%;*/
-  display:inline-block;
+left:46%;
+  display:inline-block; */
 
 }
 
@@ -622,7 +626,7 @@ body {
 }
 
 .place1 p{
-    text_align: center;
+	text_align: center;
 }
 
 .footer {
@@ -930,6 +934,7 @@ display:inline-block;
 }
 .parentContainer{
 	width:100%;
+	z-index: 999;
 }
 .open{
 	width:20%;
@@ -977,8 +982,15 @@ display:inline-block;
 }
 .topImg{
 	width:100%;
-	position :relative;
+	/* position :relative; */
 	text-align :center;	
+
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: 1;
 }
 
 
